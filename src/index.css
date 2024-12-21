@@ -1,0 +1,240 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ваши кастомные стили */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc; /* светлый фон для всего тела */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Горизонтальное центрирование */
+  align-items: center; /* Вертикальное центрирование */
+ /* Высота в 100% от экрана */
+}
+
+h1, h2, h3 {
+  font-family: 'Helvetica Neue', sans-serif; /* изменение шрифта для заголовков */
+  font-weight: 600;
+  text-align: center; /* Центрирование текста в заголовках */
+}
+
+a {
+  color: #3182ce; /* Цвет ссылок */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline; /* Подчеркивание при наведении на ссылку */
+}
+
+button {
+  font-family: 'Arial', sans-serif; /* Шрифт для кнопок */
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #3182ce; /* Фоновый цвет кнопки */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b6cb0; /* Цвет кнопки при наведении */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для карточки */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem;
+  width: 100%;
+  max-width: 400px; /* Максимальная ширина карточки */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+}
+/* Общие стили для всех страниц */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7fafc; /* Светлый фон */
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для формы регистрации */
+.prose {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem; /* Отступ сверху */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+select {
+  border: 1px solid #d1d5db; /* Серый цвет для границы */
+  border-radius: 0.375rem; /* Скругление углов */
+  padding: 0.5rem 0.75rem; /* Внутренние отступы */
+  width: 100%;
+  transition: border-color 0.2s;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #3b82f6; /* Синий цвет при фокусе */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Тень при фокусе */
+}
+
+/* Стили для кнопок */
+button {
+  background-color: #3b82f6; /* Синий цвет */
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2563eb; /* Более темный синий при наведении */
+}
+
+/* Стили для страницы входа */
+.min-h-screen {
+  min-height: 100vh; /* Минимальная высота для полной высоты экрана */
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc; /* Светлый фон */
+}
+
+/* Стили для страницы домашней */
+.container {
+  max-width: 600px; /* Максимальная ширина для контента */
+  margin: auto; /* Центрирование контейнера */
+  padding: 1.5rem; /* Внутренние отступы */
+  background-color: white; /* Белый фон для контейнера */
+  border-radius: 0.5rem; /* Скругление углов контейнера */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+  margin-top: 2rem; /* Отступ сверху */
+}
+
+/* Стили для текста */
+.text-red-500 {
+  color: #f87171; /* Красный цвет для ошибок */
+}
+
+.text-gray-600 {
+  color: #4b5563; /* Серый цвет для текста */
+}
+
+.text-gray-800 {
+  color: #1f2937; /* Темно-серый цвет для заголовков */
+}
+
+/* Стили для изображений */
+.rounded-full {
+  border-radius: 9999px; /* Полное скругление для аватара */
+}
+/* Стили для заметки */
+.note-container {
+  background-color: white; /* Белый фон для заметки */
+  border-radius: 0.5rem; /* Скругление углов */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень для заметки */
+  padding: 1rem; /* Внутренние отступы */
+  max-width: 600px; /* Максимальная ширина */
+  margin: auto; /* Центрирование */
+}
+
+/* Фиксированное тело заметки */
+.note-body {
+  max-height: 300px; /* Максимальная высота для тела заметки */
+  overflow-y: auto; /* Прокрутка по вертикали */
+  padding: 0.5rem; /* Внутренние отступы */
+  border-top: 1px solid #e5e7eb; /* Разделительная линия */
+}
+/* Стили для контейнера страницы создания заметки */
+.container {
+  max-width: 600px; /* Максимальная ширина контейнера */
+  margin: auto; /* Центрирование контейнера */
+  padding: 2rem; /* Внутренние отступы */
+  background-color: white; /* Белый фон для контейнера */
+  border-radius: 0.5rem; /* Скругление углов */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для контейнера */
+}
+
+/* Стили для заголовка страницы */
+h1 {
+  font-size: 2rem; /* Размер шрифта заголовка */
+  margin-bottom: 1rem; /* Отступ снизу */
+}
+
+/* Стили для полей ввода */
+input[type="text"],
+textarea {
+  width: 100%; /* Ширина 100% */
+  padding: 0.5rem; /* Внутренние отступы */
+  border: 1px solid #d1d5db; /* Серый цвет для границы */
+  border-radius: 0.375rem; /* Скругление углов */
+  margin-bottom: 1rem; /* Отступ снизу */
+  transition: border-color 0.2s; /* Плавный переход для границы */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none; /* Убираем обводку при фокусе */
+  border-color: #3b82f6; /* Синий цвет при фокусе */
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5); /* Тень при фокусе */
+}
+
+/* Стили для кнопки */
+button {
+  background-color: #3b82f6; /* Синий цвет */
+  color: white; /* Белый текст */
+  padding: 0.5rem 1rem; /* Внутренние отступы */
+  border: none; /* Убираем границу */
+  border-radius: 0.375rem; /* Скругление углов */
+  cursor: pointer; /* Курсор в виде указателя */
+  transition: background-color 0.3s; /* Плавный переход для фона */
+}
+
+button:hover {
+  background-color: #2563eb; /* Более темный синий при наведении */
+}
+
+/* Стили для сообщения об ошибке */
+.error {
+  color: #f87171; /* Красный цвет для ошибок */
+  font-size: 0.875rem; /* Размер шрифта для ошибок */
+}
+
+/* Стили для ссылки "Назад" */
+a {
+  color: #3b82f6; /* Синий цвет для ссылки */
+  text-decoration: underline; /* Подчеркивание */
+  margin-top: 1rem; /* Отступ сверху */
+  display: inline-block; /* Отображение в виде блока */
+}
